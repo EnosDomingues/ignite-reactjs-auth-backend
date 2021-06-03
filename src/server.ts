@@ -108,7 +108,7 @@ app.post('/refresh', addUserInformationToRequest, (request, response) => {
   const { refreshToken } = request.body;
 
   const user = users.get(email);
-
+//
   if (!user) {
     return response
       .status(401)
